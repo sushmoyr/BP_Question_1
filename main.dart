@@ -5,7 +5,8 @@ void main() {
 
     List<int> scores = inputScores();
 
-    List<int> counter = List.generate(100, (index) => 0);
+    //Empty array for count sort. Item value limit0 <= item < 1000
+    List<int> counter = List.generate(1000, (index) => 0);
 
     for (int i in scores) {
       counter[i]++;
